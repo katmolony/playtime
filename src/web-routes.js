@@ -9,6 +9,9 @@ export const webRoutes = [
   { method: "POST", path: "/register", config: accountsController.signup },
   { method: "POST", path: "/authenticate", config: accountsController.login },
 
+  // get about view
+  { method: "GET", path: "/about", config: accountsController.about },
+
   { method: "GET", path: "/dashboard", config: dashboardController.index },
   { method: "POST", path: "/dashboard/addplaylist", config: dashboardController.addPlaylist },
 ];

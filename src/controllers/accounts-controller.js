@@ -38,4 +38,12 @@ export const accountsController = {
       return h.redirect("/");
     },
   },
+
+  // get about view
+  about: {
+    handler: function (request, h) {
+      return h.view("about-view", { title: "About Playlist" });
+    },
+  },
+  
 };
