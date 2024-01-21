@@ -28,4 +28,10 @@ export const playlistMemStore = {
   async deleteAllPlaylists() {
     playlists = [];
   },
+
+  // This method returns playlists by userid
+  async getUserPlaylists(userid) {
+    return playlists.filter((playlist) => playlist.userid === userid);
+  },
+
 };
