@@ -3,6 +3,8 @@ import Vision from "@hapi/vision";
 import Handlebars from "handlebars";
 import path from "path";
 import { fileURLToPath } from "url";
+import Cookie from "@hapi/cookie";
+import { accountsController } from "./controllers/accounts-controller.js";
 import { webRoutes } from "./web-routes.js";
 import { db } from "./models/db.js";
 
@@ -15,6 +17,17 @@ async function init() {
     host: "localhost",
   });
   await server.register(Vision);
+  await server.register(Cookie);
+    server.auth.strategy("session", "cookie", {
+    cookie: {
+      name: "playtime",
+      password: "secretpasswordnotrevealedtoanyone",
+      isSecure: false,
+    },
+    redirectTo: "/",
+    validate: accountsController.validate,
+  });
+ // server.auth.default("session");
   server.views({
     engines: {
       hbs: Handlebars,
