@@ -36,10 +36,4 @@ export const dashboardController = {
     },
   },
 
-  // // async deleteStation(request, response) {
-  // //   const stationId = request.params.id;
-  // //   console.log(`Deleting Station called`);
-  // //   await stationStore.deleteStationById(stationId);
-  // //   response.redirect("/dashboard");
-  // },
 };
