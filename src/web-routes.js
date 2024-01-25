@@ -25,6 +25,5 @@ export const webRoutes = [
   { method: "POST", path: "/playlist/{id}/addtrack", config: playlistController.addTrack },
 
   // delete track
-  { method: "GET", path: "/playlist/{id}/deletetrack/{tarckid}", config: playlistController.deleteTrack },
-
+  { method: "GET", path: "/playlist/{id}/deletetrack/{trackid}", config: playlistController.deleteTrack },
 ];
