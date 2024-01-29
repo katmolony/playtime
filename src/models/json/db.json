@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "_id": "e20c921c-1110-4967-b930-210eea574e1b"
+    }
+  ],
+  "playlists": [
+    {
+      "userid": "e20c921c-1110-4967-b930-210eea574e1b",
+      "title": "Demo",
+      "_id": "7c658514-18e1-47dc-b8f4-ce24440e3e0c"
+    }
+  ],
+  "tracks": []
+}
