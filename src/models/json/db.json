@@ -5,7 +5,21 @@
       "lastName": "Simpson",
       "email": "homer@simpson.com",
       "password": "secret",
-      "_id": "e20c921c-1110-4967-b930-210eea574e1b"
+      "_id": "883d42c0-0f0b-453f-b795-5f7cecbea7a4"
+    },
+    {
+      "firstName": "Marge",
+      "lastName": "Simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "_id": "1d1907ec-40bb-4aca-964b-59f9b9c90f91"
+    },
+    {
+      "firstName": "Bart",
+      "lastName": "Simpson",
+      "email": "bart@simpson.com",
+      "password": "secret",
+      "_id": "e1685fcb-e37d-4261-bc14-f9988a158aa5"
     }
   ],
   "playlists": [
