@@ -5,55 +5,35 @@
       "lastName": "Simpson",
       "email": "homer@simpson.com",
       "password": "secret",
-      "_id": "cd2ef812-72d3-4ce1-a6da-141b73e639fd"
+      "_id": "83498c59-dc36-403c-8e7e-65a0a2ce7240"
     },
     {
       "firstName": "Marge",
       "lastName": "Simpson",
       "email": "marge@simpson.com",
       "password": "secret",
-      "_id": "ffb1371b-b746-4c81-aca1-3afc6041e9bb"
+      "_id": "77a554ad-57f5-4312-a09e-b18823ca066e"
     },
     {
       "firstName": "Bart",
       "lastName": "Simpson",
       "email": "bart@simpson.com",
       "password": "secret",
-      "_id": "c1499a52-dcdb-4f59-bdbe-2893f0e496da"
-    },
-    {
-      "firstName": "Maggie",
-      "lastName": "Simpson",
-      "email": "maggie@simpson.com",
-      "password": "secret",
-      "_id": "afe5c3c6-f6ac-4560-beb0-97e579ec2b5b"
+      "_id": "6cf4ddc0-b9a9-4ced-b495-e976b1a33f00"
     }
   ],
   "playlists": [
     {
-      "title": "Number 2",
-      "artist": "Beth",
-      "duration": 5,
-      "_id": "0bd42d2f-4c9f-4a7a-b6e1-80e71ac12daf"
+      "title": "Beethoven Sonatas",
+      "_id": "572d08fa-126f-45dd-be74-b721553a5169"
     },
     {
-      "title": "Number 3",
-      "artist": "Kate",
-      "duration": 4,
-      "_id": "f42fe670-bb66-43f8-98f6-03d1ffd9034c"
+      "title": "Beethoven Concertos",
+      "_id": "53ff715f-7151-48f1-bd8d-91715ed458d4"
     },
     {
-      "title": "Number 4",
-      "artist": "Megan",
-      "duration": 8,
-      "_id": "79a1c016-2c23-4b23-927c-28efb3f51a1c"
-    },
-    {
-      "title": "Number One",
-      "artist": "Britney",
-      "duration": 4,
-      "tracks": [],
-      "_id": "eb493b37-772a-4272-8256-cb460a8ffc97"
+      "title": "Beethoven Symphonies",
+      "_id": "d1c51565-c425-4091-a881-606628540026"
     }
   ],
   "tracks": []
