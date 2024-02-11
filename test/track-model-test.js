@@ -23,6 +23,7 @@ suite("Track Model tests", () => {
          
       assertSubset(song, track);
       assertSubset(track._id);
+     // assert.isDefined(track._id);
     });
   
     test("delete all tracks", async () => {
