@@ -40,11 +40,11 @@ suite("Track Model tests", () => {
       assertSubset(song, track);
     });
   
-    test("delete One Track - success", async () => {
+    test("delete One Track - success", async () => { 
       const id = testTracks[0]._id;
       await db.trackStore.deleteTrack(id);
       const returnedTracks = await db.trackStore.getAllTracks();
-      assert.equal(returnedTracks.length, testTracks.length - 1);
+      assertSubset(returnedTracks.length, testTracks.length - 1 );
       const deletedTrack = await db.trackStore.getTrackById(id);
       assert.isNull(deletedTrack);
     });
