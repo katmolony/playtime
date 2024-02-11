@@ -1,8 +1,20 @@
 import { Track } from "./track.js";
+import { playlistMongoStore } from "./playlist-mongo-store.js";
 
 export const trackMongoStore = {
   async getAllTracks() {
     const tracks = await Track.find().lean();
+    return tracks;
+  },
+
+  async addTrack(track) {
+    const newTrack = new Track(track);
+    const trackObj = await newTrack.save();
+    return this.getTracksByPlaylistId(trackObj._id);
+  },
+
+  async getTracksByPlaylistId(id) {
+    const tracks = await Track.find({ playlistid: id }).lean();
     return tracks;
   },
 
@@ -14,17 +26,6 @@ export const trackMongoStore = {
       return null;
     },
 
-  async addTrack(track) {
-    const newTrack = new Track(track);
-    const trackObj = await newTrack.save();
-    return this.getTracksByPlaylistId(trackObj._id);
-  },
-
-    async getTracksByPlaylistId(id) {
-    const tracks = await Track.find({ playlistid: id }).lean();
-    return tracks;
-  },
-
 
   // async getPlaylistTracks(playlistId) {
   //   await db.read();
@@ -35,17 +36,17 @@ export const trackMongoStore = {
   //   return foundTracks;
   // },
 
-  // async deleteTrack(id) {
-  //   await db.read();
-  //   const index = db.data.tracks.findIndex((track) => track._id === id);
-  //   if (index !== -1) db.data.tracks.splice(index, 1);
-  //   await db.write();
-  // },
+  async deleteTrack(id) {
+    try {
+      await Track.deleteOne({ _id: id });
+    } catch (error) {
+      console.log("bad id");
+    }
+  },
 
-  // async deleteAllTracks() {
-  //   db.data.tracks = [];
-  //   await db.write();
-  // },
+  async deleteAllTracks() {
+    await Track.deleteMany({});
+  },
 
   // async updateTrack(track, updatedTrack) {
   //   track.title = updatedTrack.title;

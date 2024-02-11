@@ -41,3 +41,27 @@ export const testPlaylists = [
     title: "Beethoven Symphonies"
   }
 ];
+
+export const song = {
+  title: "Hit Me Baby",
+  artist: "Britney",
+  duration: "4",
+};
+
+export const testTracks = [
+  {
+    title: "Song 1",
+    artist: "artist 1",
+    duration: "6",
+  },
+  {
+    title: "Song 2",
+    artist: "artist 2",
+    duration: "7",
+  },
+  {
+    title: "Song 3",
+    artist: "artist 3",
+    duration: "8",
+  }
+];
