@@ -30,6 +30,16 @@ export const mozart = {
   title: "Mozart Favourites"
 };
 
+export const concerto = {
+  "title": "Violin Concerto No. 3",
+  "artist": "Mozart",
+  "duration": 15
+};
+
+export const beethoven = {
+  title: "Mozart Favourites"
+};
+
 export const testPlaylists = [
   {
     title: "Beethoven Sonatas"
@@ -42,26 +52,20 @@ export const testPlaylists = [
   }
 ];
 
-export const song = {
-  title: "Hit Me Baby",
-  artist: "Britney",
-  duration: "4",
-};
-
 export const testTracks = [
   {
-    title: "Song 1",
-    artist: "artist 1",
-    duration: "6",
+    "title": "Piano Sonata No. 3",
+    "artist": "Beethoven",
+    "duration": 5
   },
   {
-    title: "Song 2",
-    artist: "artist 2",
-    duration: "7",
+    "title": "Piano Sonata No. 7",
+    "artist": "Beethoven",
+    "duration": 6
   },
   {
-    title: "Song 3",
-    artist: "artist 3",
-    duration: "8",
+    "title": "Piano Sonata No. 10",
+    "artist": "Beethoven",
+    "duration": 4
   }
 ];
